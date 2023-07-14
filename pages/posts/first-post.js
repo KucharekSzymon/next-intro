@@ -5,13 +5,16 @@ import Head from "next/head";
 export default function FirstoPost(){
     return (
     <>
-    <Head>
-        <title>Firts page</title>
-    </Head>
+        <Head>
+            <title>Firts page</title>
+        </Head>
+
         <h1>First post</h1>
+
         <h2>
-            <Link href="/">Back to home</Link>
+        <Link href="/">← Back to home</Link>
         </h2>
+
         <div>
             <Image
                 src="/images/profile.jpg"
