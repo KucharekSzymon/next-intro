@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import Head from "next/head";
 import Script from 'next/script';
-
+import Layout from "../../components/layout"
 
 export default function FirstoPost(){
     return (
@@ -18,7 +18,7 @@ export default function FirstoPost(){
             console.log(`script loaded correctly, window.FB has been populated`)
             }
         />
-
+        <Layout>
         <h1>First post</h1>
 
         <h2>
@@ -33,6 +33,8 @@ export default function FirstoPost(){
                 alt="Name image"
             />
         </div>
+        </Layout>
+        
     </>
     )
 }
